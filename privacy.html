@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KeepBill Privacy Policy</title>
+<style>
+  :root { --fg: #1c1f1e; --muted: #5b6360; --bg: #fff; --accent: #0E7C66; --line: #e3e7e5; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8ecea; --muted: #a2aba7; --bg: #121514; --accent: #4fd1b0; --line: #2a302d; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  nav { margin: 16px 0 24px; display: flex; gap: 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#en">English</a><a href="#vi">Tiếng Việt</a></nav>
+
+<section id="en" lang="en">
+<h1>KeepBill Privacy Policy</h1>
+<p class="muted">Effective date: November 15, 2026</p>
+
+<p>KeepBill ("the app") is a receipt and expense tracking app developed by Dev.ga ("we", "us"). This policy explains what data the app handles, where it goes and the choices you have.</p>
+
+<h2>1. Summary</h2>
+<ul>
+  <li>You can use KeepBill without an account. Your receipts and photos then stay <strong>only on your device</strong>.</li>
+  <li>If you sign in with Google, we receive your basic Google profile (name, email, profile picture) to identify your account.</li>
+  <li>On the <strong>Pro</strong> plan, receipt data is synced to our cloud database and receipt photos are stored in <strong>your own Google Drive</strong> (a hidden app folder only KeepBill can access).</li>
+  <li>The free plan shows ads from Google AdMob.</li>
+  <li>We do not sell your personal data.</li>
+</ul>
+
+<h2>2. Data we handle</h2>
+<table>
+  <tr><th>Data</th><th>When</th><th>Where it is stored / sent</th></tr>
+  <tr><td>Receipts you create (merchant, amount, currency, date, category, tags, notes, payment method, seller tax ID, invoice number, VAT, text recognized from the receipt) and receipt photos</td><td>Always</td><td>On your device. On Pro: receipt data in our cloud database (Supabase, Singapore region); photos in your Google Drive app folder.</td></tr>
+  <tr><td>Google account info: name, email address, profile picture, account ID</td><td>When you sign in</td><td>Our authentication provider (Supabase Auth).</td></tr>
+  <tr><td>Plan status (Free / Pro)</td><td>When you sign in</td><td>Our cloud database.</td></tr>
+  <tr><td>Receipt photo sent for AI reading</td><td>Only if you add your own Claude or Gemini API key and choose AI reading</td><td>Sent directly from your device to Anthropic (Claude) or Google (Gemini) using your key. We never see these requests. Their own privacy terms apply.</td></tr>
+  <tr><td>Advertising ID, approximate location (from IP), device and app usage information</td><td>Free plan, when ads are shown</td><td>Google AdMob, to show and measure ads. Where required (e.g. EEA/UK), we ask for your consent first.</td></tr>
+  <tr><td>Currency codes (e.g. "USD")</td><td>When converting currencies</td><td>open.er-api.com, to fetch exchange rates. No personal data is sent.</td></tr>
+  <tr><td>Settings, AI API keys, app lock preference</td><td>Always</td><td>Only on your device (API keys in encrypted secure storage).</td></tr>
+</table>
+
+<p>Text recognition from photos (OCR) and QR code scanning run <strong>on your device</strong> using Google ML Kit. ML Kit may contact Google services to download models and send limited diagnostic data.</p>
+
+<h2>3. How we use data</h2>
+<ul>
+  <li>To provide the app's features: storing, syncing and backing up your receipts.</li>
+  <li>To identify your account and your plan.</li>
+  <li>To show ads on the free plan.</li>
+</ul>
+<p>We do not use your receipt contents for advertising, and we do not sell or share your personal data with data brokers.</p>
+
+<h2>4. Google user data</h2>
+<p>KeepBill requests access to the <code>drive.appdata</code> scope only on the Pro plan, to store your receipt photos in a hidden app-specific folder in your Google Drive. KeepBill cannot see any other files in your Drive. KeepBill's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>5. Storage, security and retention</h2>
+<ul>
+  <li>Data is transmitted over encrypted connections (HTTPS). Cloud data is protected so that each account can only access its own records.</li>
+  <li>Data on your device stays until you delete it or uninstall the app. Without an account, uninstalling the app or losing your device permanently erases your data.</li>
+  <li>Cloud data is kept while your account exists. If your Pro plan ends, syncing stops; your existing cloud data is kept so you can download it, until you delete your account.</li>
+</ul>
+
+<h2>6. Your choices and rights</h2>
+<ul>
+  <li><strong>Use without an account</strong>: nothing leaves your device except as described for ads, OCR and exchange rates.</li>
+  <li><strong>Export</strong>: signed-in users can export CSV/PDF and full backups from the Account tab.</li>
+  <li><strong>Delete your account</strong>: in the app go to Account → Delete account. This deletes your account, all cloud receipts and the photos in KeepBill's Google Drive folder. See <a href="delete-account.html">how to delete your account</a> for other options.</li>
+  <li><strong>Ad consent</strong>: where applicable, change your choices under Account → Ad privacy. You can also reset or delete your advertising ID in your device settings.</li>
+  <li>Depending on where you live (e.g. EEA, UK, California), you may have rights to access, correct, delete or port your data, and to object to processing. Contact us to exercise them.</li>
+</ul>
+
+<h2>7. Children</h2>
+<p>KeepBill is not directed to children under 13 (or the minimum age in your country), and we do not knowingly collect their personal data.</p>
+
+<h2>8. International transfers</h2>
+<p>Our cloud database is hosted in Singapore. Google, Anthropic and other providers may process data in other countries, including the United States, under their own safeguards.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy. We will change the effective date above and, for significant changes, notify you in the app.</p>
+
+<h2>10. Contact</h2>
+<p>Dev.ga — <a href="mailto:devga.support@gmail.com">devga.support@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="vi" lang="vi">
+<h1>Chính sách quyền riêng tư KeepBill</h1>
+<p class="muted">Có hiệu lực từ: 15/11/2026</p>
+
+<p>KeepBill ("ứng dụng") là ứng dụng quản lý hóa đơn và chi tiêu do Dev.ga ("chúng tôi") phát triển. Chính sách này giải thích ứng dụng xử lý dữ liệu nào, dữ liệu được gửi đi đâu và bạn có những lựa chọn gì.</p>
+
+<h2>1. Tóm tắt</h2>
+<ul>
+  <li>Bạn có thể dùng KeepBill mà không cần tài khoản. Khi đó hóa đơn và ảnh <strong>chỉ nằm trên máy của bạn</strong>.</li>
+  <li>Nếu đăng nhập bằng Google, chúng tôi nhận thông tin cơ bản của tài khoản Google (tên, email, ảnh đại diện) để nhận diện tài khoản.</li>
+  <li>Với gói <strong>Pro</strong>, dữ liệu hóa đơn được đồng bộ lên cơ sở dữ liệu đám mây của chúng tôi, ảnh hóa đơn được lưu trong <strong>Google Drive của chính bạn</strong> (thư mục ẩn chỉ KeepBill truy cập được).</li>
+  <li>Gói Miễn phí có hiển thị quảng cáo của Google AdMob.</li>
+  <li>Chúng tôi không bán dữ liệu cá nhân của bạn.</li>
+</ul>
+
+<h2>2. Dữ liệu chúng tôi xử lý</h2>
+<table>
+  <tr><th>Dữ liệu</th><th>Khi nào</th><th>Lưu ở / gửi tới đâu</th></tr>
+  <tr><td>Hóa đơn bạn tạo (người bán, số tiền, tiền tệ, ngày, danh mục, thẻ, ghi chú, phương thức thanh toán, mã số thuế người bán, số hóa đơn, VAT, chữ đọc được từ hóa đơn) và ảnh hóa đơn</td><td>Luôn luôn</td><td>Trên máy của bạn. Gói Pro: dữ liệu hóa đơn trong cơ sở dữ liệu đám mây (Supabase, khu vực Singapore); ảnh trong thư mục ứng dụng trên Google Drive của bạn.</td></tr>
+  <tr><td>Thông tin tài khoản Google: tên, email, ảnh đại diện, mã tài khoản</td><td>Khi bạn đăng nhập</td><td>Dịch vụ xác thực của chúng tôi (Supabase Auth).</td></tr>
+  <tr><td>Trạng thái gói (Miễn phí / Pro)</td><td>Khi bạn đăng nhập</td><td>Cơ sở dữ liệu đám mây của chúng tôi.</td></tr>
+  <tr><td>Ảnh hóa đơn gửi đi để AI đọc</td><td>Chỉ khi bạn tự thêm API key Claude hoặc Gemini và chọn đọc bằng AI</td><td>Gửi thẳng từ máy bạn tới Anthropic (Claude) hoặc Google (Gemini) bằng key của bạn. Chúng tôi không thấy các yêu cầu này. Điều khoản quyền riêng tư của họ được áp dụng.</td></tr>
+  <tr><td>Mã quảng cáo, vị trí gần đúng (theo IP), thông tin thiết bị và cách dùng ứng dụng</td><td>Gói Miễn phí, khi hiển thị quảng cáo</td><td>Google AdMob, để hiển thị và đo lường quảng cáo. Ở nơi pháp luật yêu cầu (như EEA/Anh), chúng tôi hỏi sự đồng ý của bạn trước.</td></tr>
+  <tr><td>Mã tiền tệ (ví dụ "USD")</td><td>Khi quy đổi tiền tệ</td><td>open.er-api.com, để lấy tỷ giá. Không gửi dữ liệu cá nhân.</td></tr>
+  <tr><td>Cài đặt, API key AI, tùy chọn khóa ứng dụng</td><td>Luôn luôn</td><td>Chỉ trên máy của bạn (API key lưu trong bộ nhớ bảo mật được mã hóa).</td></tr>
+</table>
+
+<p>Việc đọc chữ từ ảnh (OCR) và quét mã QR chạy <strong>ngay trên máy bạn</strong> bằng Google ML Kit. ML Kit có thể kết nối tới dịch vụ của Google để tải mô hình và gửi một ít dữ liệu chẩn đoán.</p>
+
+<h2>3. Chúng tôi dùng dữ liệu để làm gì</h2>
+<ul>
+  <li>Cung cấp các tính năng của ứng dụng: lưu, đồng bộ và sao lưu hóa đơn.</li>
+  <li>Nhận diện tài khoản và gói của bạn.</li>
+  <li>Hiển thị quảng cáo ở gói Miễn phí.</li>
+</ul>
+<p>Chúng tôi không dùng nội dung hóa đơn của bạn cho quảng cáo, không bán và không chia sẻ dữ liệu cá nhân của bạn cho bên môi giới dữ liệu.</p>
+
+<h2>4. Dữ liệu người dùng Google</h2>
+<p>KeepBill chỉ xin quyền <code>drive.appdata</code> khi bạn dùng gói Pro, để lưu ảnh hóa đơn vào một thư mục ẩn dành riêng cho ứng dụng trong Google Drive của bạn. KeepBill không thấy bất kỳ tệp nào khác trong Drive. Việc KeepBill sử dụng và chuyển giao thông tin nhận từ Google API tuân thủ <a href="https://developers.google.com/terms/api-services-user-data-policy">Chính sách dữ liệu người dùng của Google API Services</a>, bao gồm các yêu cầu Sử dụng hạn chế (Limited Use).</p>
+
+<h2>5. Lưu trữ, bảo mật và thời gian lưu</h2>
+<ul>
+  <li>Dữ liệu được truyền qua kết nối mã hóa (HTTPS). Dữ liệu trên đám mây được bảo vệ để mỗi tài khoản chỉ truy cập được dữ liệu của chính mình.</li>
+  <li>Dữ liệu trên máy được giữ cho tới khi bạn xóa hoặc gỡ ứng dụng. Nếu không có tài khoản, gỡ ứng dụng hoặc mất máy sẽ làm mất vĩnh viễn dữ liệu.</li>
+  <li>Dữ liệu trên đám mây được giữ khi tài khoản còn tồn tại. Khi hết gói Pro, việc đồng bộ dừng lại; dữ liệu đã có trên đám mây vẫn được giữ để bạn tải về, cho tới khi bạn xóa tài khoản.</li>
+</ul>
+
+<h2>6. Lựa chọn và quyền của bạn</h2>
+<ul>
+  <li><strong>Dùng không cần tài khoản</strong>: không dữ liệu nào rời khỏi máy, ngoại trừ phần quảng cáo, OCR và tỷ giá như mô tả ở trên.</li>
+  <li><strong>Xuất dữ liệu</strong>: người dùng đã đăng nhập có thể xuất CSV/PDF và bản sao lưu đầy đủ ở tab Tài khoản.</li>
+  <li><strong>Xóa tài khoản</strong>: trong ứng dụng vào Tài khoản → Xóa tài khoản. Thao tác này xóa tài khoản, toàn bộ hóa đơn trên đám mây và ảnh trong thư mục KeepBill trên Google Drive. Xem <a href="delete-account.html">cách xóa tài khoản</a> để biết các cách khác.</li>
+  <li><strong>Đồng ý quảng cáo</strong>: nếu áp dụng, thay đổi lựa chọn ở Tài khoản → Quyền riêng tư quảng cáo. Bạn cũng có thể đặt lại hoặc xóa mã quảng cáo trong cài đặt của máy.</li>
+  <li>Tùy nơi bạn sống (ví dụ EEA, Anh, California, Việt Nam), bạn có thể có quyền truy cập, chỉnh sửa, xóa, chuyển dữ liệu và phản đối việc xử lý. Hãy liên hệ chúng tôi để thực hiện.</li>
+</ul>
+
+<h2>7. Trẻ em</h2>
+<p>KeepBill không hướng tới trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu ở nước bạn), và chúng tôi không cố ý thu thập dữ liệu cá nhân của trẻ em.</p>
+
+<h2>8. Chuyển dữ liệu ra nước ngoài</h2>
+<p>Cơ sở dữ liệu đám mây của chúng tôi đặt tại Singapore. Google, Anthropic và các nhà cung cấp khác có thể xử lý dữ liệu ở các nước khác, gồm Hoa Kỳ, theo các biện pháp bảo vệ của họ.</p>
+
+<h2>9. Thay đổi</h2>
+<p>Chúng tôi có thể cập nhật chính sách này. Khi đó ngày hiệu lực ở trên sẽ thay đổi; với thay đổi quan trọng, chúng tôi sẽ thông báo trong ứng dụng.</p>
+
+<h2>10. Liên hệ</h2>
+<p>Dev.ga — <a href="mailto:devga.support@gmail.com">devga.support@gmail.com</a></p>
+</section>
+</main>
+</body>
+</html>
