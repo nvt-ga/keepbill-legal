@@ -51,6 +51,7 @@
   <tr><td>Crash reports: error details and stack trace, device model, OS version, app version, a random installation ID</td><td>When the app crashes or hits a serious error (Android)</td><td>Google Firebase Crashlytics, so we can find and fix bugs. Crash reports do not include your receipts or photos.</td></tr>
   <tr><td>Shared receipt summaries: merchant, date, amount, currency, VAT, exchange rate, category, payment method; your display name in the group</td><td>Only on Pro, when you join a family group and choose to share a receipt (or turn on auto-share)</td><td>Our cloud database, visible to the members of your group. Notes, photos, recognized text, tax IDs and invoice numbers are never shared.</td></tr>
   <tr><td>Anonymous reading statistics: counts of receipts read and of fields you had to correct, per reading method, and your region setting (e.g. "DE")</td><td>Only if you turn on "Send anonymous statistics"</td><td>Our cloud database, to improve receipt reading. Contains no photos, text, amounts or merchant names and is not linked to your account.</td></tr>
+  <tr><td>Anonymous usage counts: daily counts of a few in-app events (e.g. "Pro page opened, from the ad card", "subscribe tapped", "purchase completed") and your region setting</td><td>On by default; turn off under Account → "Send anonymous usage counts"</td><td>Our cloud database, to understand which parts of KeepBill Pro are useful. Sent at most once a day as totals; contains no account, device identifier, email or receipt data and is not linked to you.</td></tr>
   <tr><td>Currency codes (e.g. "USD")</td><td>When converting currencies</td><td>open.er-api.com, to fetch exchange rates. No personal data is sent.</td></tr>
   <tr><td>Settings, AI API keys, app lock preference</td><td>Always</td><td>Only on your device (API keys in encrypted secure storage).</td></tr>
 </table>
@@ -83,7 +84,7 @@
   <li><strong>Use without an account</strong>: nothing leaves your device except as described for ads, OCR and exchange rates.</li>
   <li><strong>Export</strong>: signed-in users can export CSV/PDF and full backups from the Account tab.</li>
   <li><strong>Delete your account</strong>: in the app go to Account → Delete account. This deletes your account, all cloud receipts and the photos in KeepBill's Google Drive folder. See <a href="delete-account.html">how to delete your account</a> for other options.</li>
-  <li><strong>Family group and statistics</strong>: sharing is off by default; turn off sharing per receipt or leave the group at any time. Anonymous statistics are off by default; turn them off under Settings → Receipt reading.</li>
+  <li><strong>Family group and statistics</strong>: sharing is off by default; turn off sharing per receipt or leave the group at any time. Anonymous reading statistics are off by default; turn them off under Settings → Receipt reading. Anonymous usage counts can be turned off under Account.</li>
   <li><strong>Ad consent</strong>: where applicable, change your choices under Account → Ad privacy. You can also reset or delete your advertising ID in your device settings.</li>
   <li>Depending on where you live (e.g. EEA, UK, California), you may have rights to access, correct, delete or port your data, and to object to processing. Contact us to exercise them.</li>
 </ul>
@@ -129,6 +130,7 @@
   <tr><td>Báo cáo lỗi: chi tiết lỗi và vết ngăn xếp, mẫu máy, phiên bản hệ điều hành, phiên bản ứng dụng, một mã cài đặt ngẫu nhiên</td><td>Khi ứng dụng bị dừng đột ngột hoặc gặp lỗi nghiêm trọng (Android)</td><td>Google Firebase Crashlytics, để chúng tôi tìm và sửa lỗi. Báo cáo lỗi không chứa hóa đơn hay ảnh của bạn.</td></tr>
   <tr><td>Tóm tắt hóa đơn được chia sẻ: người bán, ngày, số tiền, tiền tệ, VAT, tỷ giá, danh mục, phương thức thanh toán; tên hiển thị của bạn trong nhóm</td><td>Chỉ ở gói Pro, khi bạn vào nhóm gia đình và chọn chia sẻ hóa đơn (hoặc bật tự chia sẻ)</td><td>Cơ sở dữ liệu đám mây của chúng tôi, các thành viên trong nhóm của bạn xem được. Ghi chú, ảnh, chữ đọc được, mã số thuế và số hóa đơn không bao giờ được chia sẻ.</td></tr>
   <tr><td>Thống kê đọc hóa đơn ẩn danh: số hóa đơn đã đọc và số lần bạn phải sửa từng trường, theo cách đọc, kèm vùng bạn chọn (ví dụ "DE")</td><td>Chỉ khi bạn bật "Gửi thống kê ẩn danh"</td><td>Cơ sở dữ liệu đám mây của chúng tôi, để cải thiện việc đọc hóa đơn. Không chứa ảnh, chữ, số tiền hay tên cửa hàng và không gắn với tài khoản của bạn.</td></tr>
+  <tr><td>Số liệu sử dụng ẩn danh: số lần mỗi ngày của vài thao tác trong app (ví dụ "mở trang Pro, từ thẻ quảng cáo", "bấm đăng ký", "mua xong") kèm vùng bạn chọn</td><td>Mặc định bật; tắt ở Tài khoản → "Gửi số liệu sử dụng ẩn danh"</td><td>Cơ sở dữ liệu đám mây của chúng tôi, để biết phần nào của KeepBill Pro hữu ích. Gửi tối đa mỗi ngày một lần dưới dạng tổng; không có tài khoản, mã thiết bị, email hay dữ liệu hóa đơn và không gắn với bạn.</td></tr>
   <tr><td>Mã tiền tệ (ví dụ "USD")</td><td>Khi quy đổi tiền tệ</td><td>open.er-api.com, để lấy tỷ giá. Không gửi dữ liệu cá nhân.</td></tr>
   <tr><td>Cài đặt, API key AI, tùy chọn khóa ứng dụng</td><td>Luôn luôn</td><td>Chỉ trên máy của bạn (API key lưu trong bộ nhớ bảo mật được mã hóa).</td></tr>
 </table>
@@ -161,7 +163,7 @@
   <li><strong>Dùng không cần tài khoản</strong>: không dữ liệu nào rời khỏi máy, ngoại trừ phần quảng cáo, OCR và tỷ giá như mô tả ở trên.</li>
   <li><strong>Xuất dữ liệu</strong>: người dùng đã đăng nhập có thể xuất CSV/PDF và bản sao lưu đầy đủ ở tab Tài khoản.</li>
   <li><strong>Xóa tài khoản</strong>: trong ứng dụng vào Tài khoản → Xóa tài khoản. Thao tác này xóa tài khoản, toàn bộ hóa đơn trên đám mây và ảnh trong thư mục KeepBill trên Google Drive. Xem <a href="delete-account.html">cách xóa tài khoản</a> để biết các cách khác.</li>
-  <li><strong>Nhóm gia đình và thống kê</strong>: mặc định không chia sẻ; bạn có thể tắt chia sẻ từng hóa đơn hoặc rời nhóm bất cứ lúc nào. Thống kê ẩn danh mặc định tắt; tắt lại ở Cài đặt → Cách đọc hóa đơn.</li>
+  <li><strong>Nhóm gia đình và thống kê</strong>: mặc định không chia sẻ; bạn có thể tắt chia sẻ từng hóa đơn hoặc rời nhóm bất cứ lúc nào. Thống kê đọc hóa đơn ẩn danh mặc định tắt; tắt lại ở Cài đặt → Cách đọc hóa đơn. Số liệu sử dụng ẩn danh tắt được ở tab Tài khoản.</li>
   <li><strong>Đồng ý quảng cáo</strong>: nếu áp dụng, thay đổi lựa chọn ở Tài khoản → Quyền riêng tư quảng cáo. Bạn cũng có thể đặt lại hoặc xóa mã quảng cáo trong cài đặt của máy.</li>
   <li>Tùy nơi bạn sống (ví dụ EEA, Anh, California, Việt Nam), bạn có thể có quyền truy cập, chỉnh sửa, xóa, chuyển dữ liệu và phản đối việc xử lý. Hãy liên hệ chúng tôi để thực hiện.</li>
 </ul>
