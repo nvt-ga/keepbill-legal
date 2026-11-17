@@ -27,7 +27,7 @@
 
 <section id="en" lang="en">
 <h1>KeepBill Privacy Policy</h1>
-<p class="muted">Effective date: November 16, 2026</p>
+<p class="muted">Effective date: November 17, 2026</p>
 
 <p>KeepBill ("the app") is a receipt and expense tracking app developed by Dev.ga ("we", "us"). This policy explains what data the app handles, where it goes and the choices you have.</p>
 
@@ -49,11 +49,13 @@
   <tr><td>Receipt photo sent for AI reading</td><td>Only if you add your own Claude or Gemini API key and choose AI reading</td><td>Sent directly from your device to Anthropic (Claude) or Google (Gemini) using your key. We never see these requests. Their own privacy terms apply.</td></tr>
   <tr><td>Advertising ID, approximate location (from IP), device and app usage information</td><td>Free plan, when ads are shown</td><td>Google AdMob, to show and measure ads. Where required (e.g. EEA/UK), we ask for your consent first.</td></tr>
   <tr><td>Crash reports: error details and stack trace, device model, OS version, app version, a random installation ID</td><td>When the app crashes or hits a serious error (Android)</td><td>Google Firebase Crashlytics, so we can find and fix bugs. Crash reports do not include your receipts or photos.</td></tr>
+  <tr><td>Shared receipt summaries: merchant, date, amount, currency, VAT, exchange rate, category, payment method; your display name in the group</td><td>Only on Pro, when you join a family group and choose to share a receipt (or turn on auto-share)</td><td>Our cloud database, visible to the members of your group. Notes, photos, recognized text, tax IDs and invoice numbers are never shared.</td></tr>
+  <tr><td>Anonymous reading statistics: counts of receipts read and of fields you had to correct, per reading method, and your region setting (e.g. "DE")</td><td>Only if you turn on "Send anonymous statistics"</td><td>Our cloud database, to improve receipt reading. Contains no photos, text, amounts or merchant names and is not linked to your account.</td></tr>
   <tr><td>Currency codes (e.g. "USD")</td><td>When converting currencies</td><td>open.er-api.com, to fetch exchange rates. No personal data is sent.</td></tr>
   <tr><td>Settings, AI API keys, app lock preference</td><td>Always</td><td>Only on your device (API keys in encrypted secure storage).</td></tr>
 </table>
 
-<p>Text recognition from photos (OCR) and QR code scanning run <strong>on your device</strong> using Google ML Kit. ML Kit may contact Google services to download models and send limited diagnostic data.</p>
+<p>Text recognition from photos (OCR) and QR code scanning run <strong>on your device</strong> using Google ML Kit. ML Kit may contact Google services to download models and send limited diagnostic data. On supported devices you can choose on-device AI (Gemini Nano), which also runs entirely on your device. KeepBill also remembers corrections you make for a merchant, on your device only, to fill in future receipts from that merchant.</p>
 
 <h2>3. How we use data</h2>
 <ul>
@@ -73,6 +75,7 @@
   <li>Data on your device stays until you delete it or uninstall the app. Without an account, uninstalling the app or losing your device permanently erases your data.</li>
   <li>Cloud data is kept while your account exists. If your Pro plan ends, syncing stops; your existing cloud data is kept so you can download it, until you delete your account.</li>
   <li>Crash reports are kept by Firebase Crashlytics for up to 90 days.</li>
+  <li>Shared receipt summaries are removed from the group when you stop sharing or delete the receipt, leave the group, are removed by the group owner, or delete your account.</li>
 </ul>
 
 <h2>6. Your choices and rights</h2>
@@ -80,6 +83,7 @@
   <li><strong>Use without an account</strong>: nothing leaves your device except as described for ads, OCR and exchange rates.</li>
   <li><strong>Export</strong>: signed-in users can export CSV/PDF and full backups from the Account tab.</li>
   <li><strong>Delete your account</strong>: in the app go to Account → Delete account. This deletes your account, all cloud receipts and the photos in KeepBill's Google Drive folder. See <a href="delete-account.html">how to delete your account</a> for other options.</li>
+  <li><strong>Family group and statistics</strong>: sharing is off by default; turn off sharing per receipt or leave the group at any time. Anonymous statistics are off by default; turn them off under Settings → Receipt reading.</li>
   <li><strong>Ad consent</strong>: where applicable, change your choices under Account → Ad privacy. You can also reset or delete your advertising ID in your device settings.</li>
   <li>Depending on where you live (e.g. EEA, UK, California), you may have rights to access, correct, delete or port your data, and to object to processing. Contact us to exercise them.</li>
 </ul>
@@ -101,7 +105,7 @@
 
 <section id="vi" lang="vi">
 <h1>Chính sách quyền riêng tư KeepBill</h1>
-<p class="muted">Có hiệu lực từ: 16/11/2026</p>
+<p class="muted">Có hiệu lực từ: 17/11/2026</p>
 
 <p>KeepBill ("ứng dụng") là ứng dụng quản lý hóa đơn và chi tiêu do Dev.ga ("chúng tôi") phát triển. Chính sách này giải thích ứng dụng xử lý dữ liệu nào, dữ liệu được gửi đi đâu và bạn có những lựa chọn gì.</p>
 
@@ -123,11 +127,13 @@
   <tr><td>Ảnh hóa đơn gửi đi để AI đọc</td><td>Chỉ khi bạn tự thêm API key Claude hoặc Gemini và chọn đọc bằng AI</td><td>Gửi thẳng từ máy bạn tới Anthropic (Claude) hoặc Google (Gemini) bằng key của bạn. Chúng tôi không thấy các yêu cầu này. Điều khoản quyền riêng tư của họ được áp dụng.</td></tr>
   <tr><td>Mã quảng cáo, vị trí gần đúng (theo IP), thông tin thiết bị và cách dùng ứng dụng</td><td>Gói Miễn phí, khi hiển thị quảng cáo</td><td>Google AdMob, để hiển thị và đo lường quảng cáo. Ở nơi pháp luật yêu cầu (như EEA/Anh), chúng tôi hỏi sự đồng ý của bạn trước.</td></tr>
   <tr><td>Báo cáo lỗi: chi tiết lỗi và vết ngăn xếp, mẫu máy, phiên bản hệ điều hành, phiên bản ứng dụng, một mã cài đặt ngẫu nhiên</td><td>Khi ứng dụng bị dừng đột ngột hoặc gặp lỗi nghiêm trọng (Android)</td><td>Google Firebase Crashlytics, để chúng tôi tìm và sửa lỗi. Báo cáo lỗi không chứa hóa đơn hay ảnh của bạn.</td></tr>
+  <tr><td>Tóm tắt hóa đơn được chia sẻ: người bán, ngày, số tiền, tiền tệ, VAT, tỷ giá, danh mục, phương thức thanh toán; tên hiển thị của bạn trong nhóm</td><td>Chỉ ở gói Pro, khi bạn vào nhóm gia đình và chọn chia sẻ hóa đơn (hoặc bật tự chia sẻ)</td><td>Cơ sở dữ liệu đám mây của chúng tôi, các thành viên trong nhóm của bạn xem được. Ghi chú, ảnh, chữ đọc được, mã số thuế và số hóa đơn không bao giờ được chia sẻ.</td></tr>
+  <tr><td>Thống kê đọc hóa đơn ẩn danh: số hóa đơn đã đọc và số lần bạn phải sửa từng trường, theo cách đọc, kèm vùng bạn chọn (ví dụ "DE")</td><td>Chỉ khi bạn bật "Gửi thống kê ẩn danh"</td><td>Cơ sở dữ liệu đám mây của chúng tôi, để cải thiện việc đọc hóa đơn. Không chứa ảnh, chữ, số tiền hay tên cửa hàng và không gắn với tài khoản của bạn.</td></tr>
   <tr><td>Mã tiền tệ (ví dụ "USD")</td><td>Khi quy đổi tiền tệ</td><td>open.er-api.com, để lấy tỷ giá. Không gửi dữ liệu cá nhân.</td></tr>
   <tr><td>Cài đặt, API key AI, tùy chọn khóa ứng dụng</td><td>Luôn luôn</td><td>Chỉ trên máy của bạn (API key lưu trong bộ nhớ bảo mật được mã hóa).</td></tr>
 </table>
 
-<p>Việc đọc chữ từ ảnh (OCR) và quét mã QR chạy <strong>ngay trên máy bạn</strong> bằng Google ML Kit. ML Kit có thể kết nối tới dịch vụ của Google để tải mô hình và gửi một ít dữ liệu chẩn đoán.</p>
+<p>Việc đọc chữ từ ảnh (OCR) và quét mã QR chạy <strong>ngay trên máy bạn</strong> bằng Google ML Kit. ML Kit có thể kết nối tới dịch vụ của Google để tải mô hình và gửi một ít dữ liệu chẩn đoán. Trên máy hỗ trợ, bạn có thể chọn AI trên máy (Gemini Nano), cũng chạy hoàn toàn trên máy bạn. KeepBill cũng ghi nhớ những chỗ bạn sửa theo từng cửa hàng, chỉ trên máy bạn, để điền sẵn cho các hóa đơn sau của cửa hàng đó.</p>
 
 <h2>3. Chúng tôi dùng dữ liệu để làm gì</h2>
 <ul>
@@ -147,6 +153,7 @@
   <li>Dữ liệu trên máy được giữ cho tới khi bạn xóa hoặc gỡ ứng dụng. Nếu không có tài khoản, gỡ ứng dụng hoặc mất máy sẽ làm mất vĩnh viễn dữ liệu.</li>
   <li>Dữ liệu trên đám mây được giữ khi tài khoản còn tồn tại. Khi hết gói Pro, việc đồng bộ dừng lại; dữ liệu đã có trên đám mây vẫn được giữ để bạn tải về, cho tới khi bạn xóa tài khoản.</li>
   <li>Báo cáo lỗi được Firebase Crashlytics lưu tối đa 90 ngày.</li>
+  <li>Tóm tắt hóa đơn đã chia sẻ bị gỡ khỏi nhóm khi bạn tắt chia sẻ hoặc xóa hóa đơn, rời nhóm, bị trưởng nhóm mời ra, hoặc xóa tài khoản.</li>
 </ul>
 
 <h2>6. Lựa chọn và quyền của bạn</h2>
@@ -154,6 +161,7 @@
   <li><strong>Dùng không cần tài khoản</strong>: không dữ liệu nào rời khỏi máy, ngoại trừ phần quảng cáo, OCR và tỷ giá như mô tả ở trên.</li>
   <li><strong>Xuất dữ liệu</strong>: người dùng đã đăng nhập có thể xuất CSV/PDF và bản sao lưu đầy đủ ở tab Tài khoản.</li>
   <li><strong>Xóa tài khoản</strong>: trong ứng dụng vào Tài khoản → Xóa tài khoản. Thao tác này xóa tài khoản, toàn bộ hóa đơn trên đám mây và ảnh trong thư mục KeepBill trên Google Drive. Xem <a href="delete-account.html">cách xóa tài khoản</a> để biết các cách khác.</li>
+  <li><strong>Nhóm gia đình và thống kê</strong>: mặc định không chia sẻ; bạn có thể tắt chia sẻ từng hóa đơn hoặc rời nhóm bất cứ lúc nào. Thống kê ẩn danh mặc định tắt; tắt lại ở Cài đặt → Cách đọc hóa đơn.</li>
   <li><strong>Đồng ý quảng cáo</strong>: nếu áp dụng, thay đổi lựa chọn ở Tài khoản → Quyền riêng tư quảng cáo. Bạn cũng có thể đặt lại hoặc xóa mã quảng cáo trong cài đặt của máy.</li>
   <li>Tùy nơi bạn sống (ví dụ EEA, Anh, California, Việt Nam), bạn có thể có quyền truy cập, chỉnh sửa, xóa, chuyển dữ liệu và phản đối việc xử lý. Hãy liên hệ chúng tôi để thực hiện.</li>
 </ul>
