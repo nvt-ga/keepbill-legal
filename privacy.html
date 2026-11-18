@@ -45,6 +45,7 @@
   <tr><th>Data</th><th>When</th><th>Where it is stored / sent</th></tr>
   <tr><td>Receipts you create (merchant, amount, currency, date, category, tags, notes, payment method, seller tax ID, invoice number, VAT, text recognized from the receipt) and receipt photos</td><td>Always</td><td>On your device. On Pro: receipt data in our cloud database (Supabase, Singapore region); photos in your Google Drive app folder.</td></tr>
   <tr><td>Google account info: name, email address, profile picture, account ID</td><td>When you sign in</td><td>Our authentication provider (Supabase Auth).</td></tr>
+  <tr><td>Emails you forward to your private KeepBill address (sender, subject, text and PDF / image / XML attachments)</td><td>Only if you use "Receipts by email" (Pro)</td><td>Received by Cloudflare Email Routing and passed to our cloud (Supabase, Singapore region) until you import them; files are deleted after import, everything after 30 days at most.</td></tr>
   <tr><td>Plan status (Free / Pro)</td><td>When you sign in</td><td>Our cloud database.</td></tr>
   <tr><td>Receipt photo sent for AI reading</td><td>Only if you add your own Claude or Gemini API key and choose AI reading</td><td>Sent directly from your device to Anthropic (Claude) or Google (Gemini) using your key. We never see these requests. Their own privacy terms apply.</td></tr>
   <tr><td>Advertising ID, approximate location (from IP), device and app usage information</td><td>Free plan, when ads are shown</td><td>Google AdMob, to show and measure ads. Where required (e.g. EEA/UK), we ask for your consent first.</td></tr>
@@ -76,6 +77,7 @@
   <li>Data on your device stays until you delete it or uninstall the app. Without an account, uninstalling the app or losing your device permanently erases your data.</li>
   <li>Cloud data is kept while your account exists. If your Pro plan ends, syncing stops; your existing cloud data is kept so you can download it, until you delete your account.</li>
   <li>Crash reports are kept by Firebase Crashlytics for up to 90 days.</li>
+  <li>Forwarded emails are kept for at most 30 days; their attachments are deleted as soon as you import them. You can delete an email in the app at any time, and get a new address if yours receives spam.</li>
   <li>Shared receipt summaries are removed from the group when you stop sharing or delete the receipt, leave the group, are removed by the group owner, or delete your account.</li>
 </ul>
 
@@ -93,7 +95,7 @@
 <p>KeepBill is not directed to children under 13 (or the minimum age in your country), and we do not knowingly collect their personal data.</p>
 
 <h2>8. International transfers</h2>
-<p>Our cloud database is hosted in Singapore. Google, Anthropic and other providers may process data in other countries, including the United States, under their own safeguards.</p>
+<p>Our cloud database is hosted in Singapore. Google, Anthropic, Cloudflare (forwarded emails) and other providers may process data in other countries, including the United States, under their own safeguards.</p>
 
 <h2>9. Changes</h2>
 <p>We may update this policy. We will change the effective date above and, for significant changes, notify you in the app.</p>
@@ -124,6 +126,7 @@
   <tr><th>Dữ liệu</th><th>Khi nào</th><th>Lưu ở / gửi tới đâu</th></tr>
   <tr><td>Hóa đơn bạn tạo (người bán, số tiền, tiền tệ, ngày, danh mục, thẻ, ghi chú, phương thức thanh toán, mã số thuế người bán, số hóa đơn, VAT, chữ đọc được từ hóa đơn) và ảnh hóa đơn</td><td>Luôn luôn</td><td>Trên máy của bạn. Gói Pro: dữ liệu hóa đơn trong cơ sở dữ liệu đám mây (Supabase, khu vực Singapore); ảnh trong thư mục ứng dụng trên Google Drive của bạn.</td></tr>
   <tr><td>Thông tin tài khoản Google: tên, email, ảnh đại diện, mã tài khoản</td><td>Khi bạn đăng nhập</td><td>Dịch vụ xác thực của chúng tôi (Supabase Auth).</td></tr>
+  <tr><td>Email bạn chuyển tiếp tới địa chỉ KeepBill riêng (người gửi, tiêu đề, nội dung và tệp PDF / ảnh / XML đính kèm)</td><td>Chỉ khi bạn dùng "Hóa đơn qua email" (Pro)</td><td>Cloudflare Email Routing nhận thư và chuyển lên đám mây của chúng tôi (Supabase, khu vực Singapore) tới khi bạn nhập; tệp bị xóa ngay sau khi nhập, mọi thứ bị xóa sau tối đa 30 ngày.</td></tr>
   <tr><td>Trạng thái gói (Miễn phí / Pro)</td><td>Khi bạn đăng nhập</td><td>Cơ sở dữ liệu đám mây của chúng tôi.</td></tr>
   <tr><td>Ảnh hóa đơn gửi đi để AI đọc</td><td>Chỉ khi bạn tự thêm API key Claude hoặc Gemini và chọn đọc bằng AI</td><td>Gửi thẳng từ máy bạn tới Anthropic (Claude) hoặc Google (Gemini) bằng key của bạn. Chúng tôi không thấy các yêu cầu này. Điều khoản quyền riêng tư của họ được áp dụng.</td></tr>
   <tr><td>Mã quảng cáo, vị trí gần đúng (theo IP), thông tin thiết bị và cách dùng ứng dụng</td><td>Gói Miễn phí, khi hiển thị quảng cáo</td><td>Google AdMob, để hiển thị và đo lường quảng cáo. Ở nơi pháp luật yêu cầu (như EEA/Anh), chúng tôi hỏi sự đồng ý của bạn trước.</td></tr>
@@ -155,6 +158,7 @@
   <li>Dữ liệu trên máy được giữ cho tới khi bạn xóa hoặc gỡ ứng dụng. Nếu không có tài khoản, gỡ ứng dụng hoặc mất máy sẽ làm mất vĩnh viễn dữ liệu.</li>
   <li>Dữ liệu trên đám mây được giữ khi tài khoản còn tồn tại. Khi hết gói Pro, việc đồng bộ dừng lại; dữ liệu đã có trên đám mây vẫn được giữ để bạn tải về, cho tới khi bạn xóa tài khoản.</li>
   <li>Báo cáo lỗi được Firebase Crashlytics lưu tối đa 90 ngày.</li>
+  <li>Email chuyển tiếp được giữ tối đa 30 ngày; tệp đính kèm bị xóa ngay khi bạn nhập. Bạn có thể xóa thư trong ứng dụng bất cứ lúc nào, và đổi địa chỉ mới nếu nhận thư rác.</li>
   <li>Tóm tắt hóa đơn đã chia sẻ bị gỡ khỏi nhóm khi bạn tắt chia sẻ hoặc xóa hóa đơn, rời nhóm, bị trưởng nhóm mời ra, hoặc xóa tài khoản.</li>
 </ul>
 
@@ -172,7 +176,7 @@
 <p>KeepBill không hướng tới trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu ở nước bạn), và chúng tôi không cố ý thu thập dữ liệu cá nhân của trẻ em.</p>
 
 <h2>8. Chuyển dữ liệu ra nước ngoài</h2>
-<p>Cơ sở dữ liệu đám mây của chúng tôi đặt tại Singapore. Google, Anthropic và các nhà cung cấp khác có thể xử lý dữ liệu ở các nước khác, gồm Hoa Kỳ, theo các biện pháp bảo vệ của họ.</p>
+<p>Cơ sở dữ liệu đám mây của chúng tôi đặt tại Singapore. Google, Anthropic, Cloudflare (email chuyển tiếp) và các nhà cung cấp khác có thể xử lý dữ liệu ở các nước khác, gồm Hoa Kỳ, theo các biện pháp bảo vệ của họ.</p>
 
 <h2>9. Thay đổi</h2>
 <p>Chúng tôi có thể cập nhật chính sách này. Khi đó ngày hiệu lực ở trên sẽ thay đổi; với thay đổi quan trọng, chúng tôi sẽ thông báo trong ứng dụng.</p>
